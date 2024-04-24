@@ -20,7 +20,12 @@
 #include <assert.h>
 #include <errno.h>
 #include <stdbool.h>
+#ifdef WIN32
+#include <WinSock2.h>
+#define SOL_TCP IPPROTO_TCP
+#else
 #include <netinet/tcp.h>
+#endif
 
 #include "raop.h"
 #include "netutils.h"
@@ -155,6 +160,7 @@ raop_rtp_mirror_thread(void *arg)
     int stream_fd = -1;
     unsigned char packet[128];
     memset(packet, 0 , 128);
+    unsigned char* sps_pps = NULL;
     unsigned char* payload = NULL;
     unsigned int readstart = 0;
 
@@ -374,8 +380,13 @@ raop_rtp_mirror_thread(void *arg)
 
                 if (h264.sps_size + h264.pps_size < 102400) {
                     // Copy the sps and pps into a buffer to hand to the decoder
+                    if (sps_pps) {
+                        free(sps_pps);
+                        sps_pps = NULL;
+                    }
                     int sps_pps_len = (h264.sps_size + h264.pps_size) + 8;
-                    unsigned char sps_pps[sps_pps_len];
+                    //unsigned char sps_pps[sps_pps_len];
+                    sps_pps = malloc(sps_pps_len);
                     sps_pps[0] = 0;
                     sps_pps[1] = 0;
                     sps_pps[2] = 0;

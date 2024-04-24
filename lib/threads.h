@@ -16,23 +16,30 @@
 #define THREADS_H
 
 #if defined(WIN32)
+#include <pthread.h>
 #include <windows.h>
 
 #define sleepms(x) Sleep(x)
 
-typedef HANDLE thread_handle_t;
+typedef pthread_t thread_handle_t;
 
-#define THREAD_RETVAL DWORD WINAPI
+#define THREAD_RETVAL void *
 #define THREAD_CREATE(handle, func, arg) \
-	handle = CreateThread(NULL, 0, func, arg, 0, NULL)
-#define THREAD_JOIN(handle) do { WaitForSingleObject(handle, INFINITE); CloseHandle(handle); } while(0)
+pthread_create(&(handle), NULL, func, arg)
+#define THREAD_JOIN(handle) pthread_join(handle, NULL)
 
-typedef HANDLE mutex_handle_t;
+#define  mutex_handle_t pthread_mutex_t 
 
-#define MUTEX_CREATE(handle) handle = CreateMutex(NULL, FALSE, NULL)
-#define MUTEX_LOCK(handle) WaitForSingleObject(handle, INFINITE)
-#define MUTEX_UNLOCK(handle) ReleaseMutex(handle)
-#define MUTEX_DESTROY(handle) CloseHandle(handle)
+typedef pthread_cond_t cond_handle_t;
+
+#define MUTEX_CREATE(handle) pthread_mutex_init(&(handle), NULL)
+#define MUTEX_LOCK(handle) pthread_mutex_lock(&(handle))
+#define MUTEX_UNLOCK(handle) pthread_mutex_unlock(&(handle))
+#define MUTEX_DESTROY(handle) pthread_mutex_destroy(&(handle))
+
+#define COND_CREATE(handle) pthread_cond_init(&(handle), NULL)
+#define COND_SIGNAL(handle) pthread_cond_signal(&(handle))
+#define COND_DESTROY(handle) pthread_cond_destroy(&(handle))
 
 #else /* Use pthread library */
 

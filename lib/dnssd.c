@@ -35,7 +35,7 @@
 #include "compat.h"
 #include "utils.h"
 
-#include <dns_sd.h>
+#include "dns_sd.h"
 
 #define MAX_DEVICEID 18
 #define MAX_SERVNAME 256
@@ -60,7 +60,7 @@
 # endif
 
 typedef struct _DNSServiceRef_t *DNSServiceRef;
-typedef union _TXTRecordRef_t { char PrivateData[16]; char *ForceNaturalAlignment; } TXTRecordRef;
+//typedef union _TXTRecordRef_t { char PrivateData[16]; char *ForceNaturalAlignment; } TXTRecordRef;
 
 typedef uint32_t DNSServiceFlags;
 typedef int32_t  DNSServiceErrorType;

@@ -222,6 +222,7 @@ raop_ntp_init_socket(raop_ntp_t *raop_ntp, int use_ipv6)
 static void
 raop_ntp_flush_socket(int fd)
 {
+#ifndef WIN32
     int bytes_available = 0;
     while (ioctl(fd, FIONREAD, &bytes_available) == 0 && bytes_available > 0)
     {
@@ -234,7 +235,30 @@ raop_ntp_flush_socket(int fd)
             break;
         }
     }
+#endif
 }
+
+#ifdef WIN32
+
+int gettimeofday(struct timeval* tp, void* tzp)
+{
+    time_t clock;
+    struct tm tm;
+    SYSTEMTIME wtm;
+    GetLocalTime(&wtm);
+    tm.tm_year = wtm.wYear - 1900;
+    tm.tm_mon = wtm.wMonth - 1;
+    tm.tm_mday = wtm.wDay;
+    tm.tm_hour = wtm.wHour;
+    tm.tm_min = wtm.wMinute;
+    tm.tm_sec = wtm.wSecond;
+    tm.tm_isdst = -1;
+    clock = mktime(&tm);
+    tp->tv_sec = clock;
+    tp->tv_usec = wtm.wMilliseconds * 1000;
+    return (0);
+}
+#endif
 
 static THREAD_RETVAL
 raop_ntp_thread(void *arg)
@@ -430,7 +454,17 @@ uint64_t raop_ntp_timestamp_to_micro_seconds(uint64_t ntp_timestamp, bool accoun
  */
 uint64_t raop_ntp_get_local_time(raop_ntp_t *raop_ntp) {
     struct timespec time;
+
+#ifdef _WIN32
+    LARGE_INTEGER counter, frequency;
+    QueryPerformanceCounter(&counter);
+    QueryPerformanceFrequency(&frequency);
+    // 计算秒数和纳秒数
+    time.tv_sec = counter.QuadPart / frequency.QuadPart;
+    time.tv_nsec = (long)(((double)(counter.QuadPart % frequency.QuadPart) / frequency.QuadPart) * 1000000000L);
+#else
     clock_gettime(CLOCK_REALTIME, &time);
+#endif
     return (uint64_t)time.tv_sec * 1000000L + (uint64_t)(time.tv_nsec / 1000);
 }
 

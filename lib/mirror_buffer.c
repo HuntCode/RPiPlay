@@ -41,7 +41,7 @@ void
 mirror_buffer_init_aes(mirror_buffer_t *mirror_buffer, uint64_t streamConnectionID)
 {
     sha_ctx_t *ctx = sha_init();
-    unsigned char eaeskey[64] = {};
+    unsigned char eaeskey[64] = {0};
     memcpy(eaeskey, mirror_buffer->aeskey, 16);
     sha_update(ctx, eaeskey, 16);
     sha_update(ctx, mirror_buffer->ecdh_secret, 32);

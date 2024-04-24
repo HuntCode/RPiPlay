@@ -13,13 +13,19 @@
  */
 
 #include <time.h>
+#ifdef WIN32
+#include <winsock2.h>
+#else
 #include <netinet/in.h>
+#endif
 #include "byteutils.h"
 
+#ifndef WIN32
 #ifndef htonll
 #include <endian.h>
 #define htonll(x) htobe64(x)
 #define ntohll(x) be64toh(x)
+#endif
 #endif
 
 // The functions in this file assume a little endian cpu architecture!
