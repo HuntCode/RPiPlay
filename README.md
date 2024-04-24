@@ -1,2 +1,2 @@
-# UxPlay
-基于开源UxPlay，实现AirPlay接收端
+# RPiPlay
+基于开源RPiPlay，实现AirPlay接收端
