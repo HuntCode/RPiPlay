@@ -1,6 +1,0 @@
-﻿  Building Custom Rule C:/A_ReserveLand/HHCast/RPiPlay/CMakeLists.txt
-  airplay.cpp
-C:\A_ReserveLand\HHCast\RPiPlay\airplay.cpp(132,23): warning C4018: “<”: 有符号/无符号不匹配
-C:\A_ReserveLand\HHCast\RPiPlay\airplay.cpp(400): warning C4715: “HHAirPlayStart”: 不是所有的控件路径都返回值
-    正在创建库 C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/Debug/libairplay.lib 和对象 C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/Debug/libairplay.exp
-  libairplay.vcxproj -> C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Debug\libairplay.dll

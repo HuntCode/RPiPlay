@@ -17,7 +17,25 @@
 	#define HHAIRPLAY_API EXTERN_C
 #endif
 
+#include <functional>
+
+HHAIRPLAY_API void HHAirPlaySetVideoFrameHandler(std::function<void(unsigned char* data, int data_len)> callback);
+
+HHAIRPLAY_API void HHAirPlaySetAudioFrameHandler(std::function<void(unsigned char* data, int data_len)> callback);
+
+/** Start AirPlay Service
+ *
+ * @param  deviceName The device name(service name) shown on the list of Apple Screen Mirroring
+ *
+ * @return
+ * - 0: Success.
+ * - < 0: Failure.
+ */
 HHAIRPLAY_API int HHAirPlayStart(const char* deviceName);
+
+/** Stop AirPlay Service
+ *
+ */
 HHAIRPLAY_API void HHAirPlayStop();
 
 #endif // HH_AIRPLAY_H
