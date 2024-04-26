@@ -1,0 +1,3 @@
+﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\A_ReserveLand\HHCast\RPiPlay\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  TestStudio.cpp
+  TestStudio.vcxproj -> C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Debug\TestStudio.exe

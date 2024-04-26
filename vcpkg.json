@@ -1,0 +1,9 @@
+{
+    "name": "test",
+    "version-string": "0.0.1",
+    "dependencies": [
+	  "pthread",
+      "libplist",
+	  "openssl"
+    ]
+  }

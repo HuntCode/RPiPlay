@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14378E54-99EF-3552-BE43-E535F9265EAA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>libairplay</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libairplay.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libairplay</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libairplay.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libairplay</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libairplay.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libairplay</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libairplay.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libairplay</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR="Debug";libairplay_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAS_HH_RENDERER;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR=\"Debug\";libairplay_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>renderers\Debug\renderers.lib;lib\Debug\airplay.lib;lib\playfair\Debug\playfair.lib;lib\llhttp\Debug\llhttp.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/Debug/libairplay.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/Debug/libairplay.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;NDEBUG;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR="Release";libairplay_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;NDEBUG;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR=\"Release\";libairplay_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>renderers\Release\renderers.lib;lib\Release\airplay.lib;lib\playfair\Release\playfair.lib;lib\llhttp\Release\llhttp.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/Release/libairplay.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/Release/libairplay.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;NDEBUG;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR="MinSizeRel";libairplay_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;NDEBUG;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR=\"MinSizeRel\";libairplay_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>renderers\MinSizeRel\renderers.lib;lib\MinSizeRel\airplay.lib;lib\playfair\MinSizeRel\playfair.lib;lib\llhttp\MinSizeRel\llhttp.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/MinSizeRel/libairplay.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/MinSizeRel/libairplay.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;NDEBUG;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";libairplay_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAS_HH_RENDERER;NDEBUG;LIBAIRPLAY_EXPORTS;CMAKE_INTDIR=\"RelWithDebInfo\";libairplay_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>renderers\RelWithDebInfo\renderers.lib;lib\RelWithDebInfo\airplay.lib;lib\playfair\RelWithDebInfo\playfair.lib;lib\llhttp\RelWithDebInfo\llhttp.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/RelWithDebInfo/libairplay.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/RelWithDebInfo/libairplay.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\A_ReserveLand\HHCast\RPiPlay\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/A_ReserveLand/HHCast/RPiPlay/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Z_Disk\CMake\bin\cmake.exe -SC:/A_ReserveLand/HHCast/RPiPlay -BC:/A_ReserveLand/HHCast/RPiPlay/build_Win32 --check-stamp-file C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/A_ReserveLand/HHCast/RPiPlay/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Z_Disk\CMake\bin\cmake.exe -SC:/A_ReserveLand/HHCast/RPiPlay -BC:/A_ReserveLand/HHCast/RPiPlay/build_Win32 --check-stamp-file C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/A_ReserveLand/HHCast/RPiPlay/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Z_Disk\CMake\bin\cmake.exe -SC:/A_ReserveLand/HHCast/RPiPlay -BC:/A_ReserveLand/HHCast/RPiPlay/build_Win32 --check-stamp-file C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/A_ReserveLand/HHCast/RPiPlay/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Z_Disk\CMake\bin\cmake.exe -SC:/A_ReserveLand/HHCast/RPiPlay -BC:/A_ReserveLand/HHCast/RPiPlay/build_Win32 --check-stamp-file C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Z_Disk\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\airplay.cpp" />
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\airplay.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\ZERO_CHECK.vcxproj">
+      <Project>{2E48D6D8-0A58-3C68-8650-173E39B1455F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\lib\airplay.vcxproj">
+      <Project>{AA3B0B30-27CE-36F1-AFC2-BC9C667AC86D}</Project>
+      <Name>airplay</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\lib\llhttp\llhttp.vcxproj">
+      <Project>{CBB70098-0871-3EB6-9FB9-1C25A9A9321F}</Project>
+      <Name>llhttp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\lib\playfair\playfair.vcxproj">
+      <Project>{1C050E44-1FB6-3090-997F-BB373D1E7651}</Project>
+      <Name>playfair</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\renderers\renderers.vcxproj">
+      <Project>{B0B9EF50-8077-32EA-90CB-347466DE8855}</Project>
+      <Name>renderers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

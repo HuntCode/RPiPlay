@@ -1,0 +1,9 @@
+﻿  Building Custom Rule C:/A_ReserveLand/HHCast/RPiPlay/lib/llhttp/CMakeLists.txt
+  The vcpkg manifest was disabled, but we found a manifest file in C:\A_ReserveLand\HHCast\RPiPlay\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  api.c
+  http.c
+  llhttp.c
+  正在生成代码...
+C:\A_ReserveLand\HHCast\RPiPlay\lib\llhttp\llhttp.c(8771,19): warning C4244: “=”: 从“uint64_t”转换到“size_t”，可能丢失数据
+C:\A_ReserveLand\HHCast\RPiPlay\lib\llhttp\llhttp.c(9140,19): warning C4244: “=”: 从“uint64_t”转换到“size_t”，可能丢失数据
+  llhttp.vcxproj -> C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\lib\llhttp\Debug\llhttp.lib

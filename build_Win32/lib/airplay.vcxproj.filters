@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\byteutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\crypto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\dnssd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\fairplay_playfair.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\http_request.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\http_response.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\httpd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\logger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\mirror_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\netutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\pairing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_ntp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_rtp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_rtp_mirror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\byteutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\dns_sd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\dnssd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\dnssdint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\fairplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\http_request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\http_response.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\httpd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\memalign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\mirror_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\netutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\pairing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_handlers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_ntp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_rtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\raop_rtp_mirror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\sockets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\threads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\A_ReserveLand\HHCast\RPiPlay\lib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{26BB27BE-CB44-3ACD-B25A-9398B7C6DE8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{57FA94AC-4742-36C2-AAAA-814EB19DF67A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

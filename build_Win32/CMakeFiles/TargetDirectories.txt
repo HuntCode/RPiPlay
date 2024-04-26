@@ -1,0 +1,7 @@
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/libairplay.dir
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/ALL_BUILD.dir
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/CMakeFiles/ZERO_CHECK.dir
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/lib/playfair/CMakeFiles/playfair.dir
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/lib/llhttp/CMakeFiles/llhttp.dir
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/lib/CMakeFiles/airplay.dir
+C:/A_ReserveLand/HHCast/RPiPlay/build_Win32/renderers/CMakeFiles/renderers.dir

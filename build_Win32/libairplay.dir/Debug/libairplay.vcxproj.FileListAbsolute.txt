@@ -1,0 +1,4 @@
+C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Debug\libcrypto-3.dll
+C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Debug\plist-2.0.dll
+C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\Debug\pthreadVC3d.dll
+C:\A_ReserveLand\HHCast\RPiPlay\build_Win32\libairplay.dir\Debug\libairplay.vcxproj.CopyComplete
