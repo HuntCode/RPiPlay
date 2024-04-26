@@ -55,7 +55,7 @@ $TOOLCHAIN/bin/$TARGET$API-clang可以赋值给CC，用于make或者cmake体系�
 
 3.进入项目目录~/RPiPlay,在Ubuntu上执行命令
 ```shell
-mkdir build && cd build
+mkdir build_android && cd build_android
 
 cmake -DCMAKE_TOOLCHAIN_FILE=$NDK/build/cmake/android.toolchain.cmake \
       -DANDROID_ABI="armeabi-v7a" \
@@ -80,7 +80,7 @@ openssl
 
 进入项目目录~/RPiPlay
 ```shell
-mkdir build && cd build
+mkdir build_Win32 && cd build_Win32
 
 cmake -G "Visual Studio 17 2022" -A "Win32" ..
 
