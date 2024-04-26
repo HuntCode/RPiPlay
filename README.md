@@ -71,6 +71,13 @@ TODO:
 
 ### Windows平台
 
+项目依赖相关库：
+pthread
+plist
+openssl
+
+借助vcpkg直接安装即可，具体参考https://github.com/microsoft/vcpkg
+
 进入项目目录~/RPiPlay
 ```shell
 mkdir build && cd build
