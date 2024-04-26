@@ -8,7 +8,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 		"Debug" "Release" "MinSizeRel" "RelWithDebInfo")
 endif()
 
-project(rpiplay)
+project(AirPlay)
 
 set (CMAKE_CXX_STANDARD 11)
 
@@ -22,7 +22,11 @@ add_subdirectory(renderers)
 # Make sure the main executable is aware of the available renderers
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${RENDERER_FLAGS}" )
 
-add_executable( rpiplay rpiplay.cpp)
-target_link_libraries ( rpiplay renderers airplay )
+#add_executable( rpiplay rpiplay.cpp)
+#target_link_libraries ( rpiplay renderers airplay )
 
-install(TARGETS rpiplay RUNTIME DESTINATION bin)
+#install(TARGETS rpiplay RUNTIME DESTINATION bin)
+
+add_library( libairplay SHARED airplay.cpp airplay.h)
+target_compile_definitions(libairplay PRIVATE LIBAIRPLAY_EXPORTS)
+target_link_libraries ( libairplay renderers airplay )

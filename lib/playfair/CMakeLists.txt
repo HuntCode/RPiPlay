@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.4.1)
-aux_source_directory(. playfair_src)
-set(DIR_SRCS ${playfair_src})
+
+file(GLOB DIR_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*c ${CMAKE_CURRENT_SOURCE_DIR}/*h)
+
 include_directories(.)
+
 add_library( playfair
         STATIC
         ${DIR_SRCS})

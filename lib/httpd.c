@@ -82,6 +82,7 @@ httpd_init(logger_t *logger, httpd_callbacks_t *callbacks, int max_connections)
     /* Initial status joined */
     httpd->running = 0;
     httpd->joined = 1;
+    MUTEX_CREATE(httpd->run_mutex);
 
     return httpd;
 }
