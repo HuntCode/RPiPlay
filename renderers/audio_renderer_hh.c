@@ -16,6 +16,10 @@
 #include <unistd.h>
 #endif
 
+#include "../common/common_defines.h"
+
+AudioFrameHandler g_audioFrameHandler = NULL;
+
 typedef struct audio_renderer_hh_s {
     audio_renderer_t base;
 } audio_renderer_hh_t;
@@ -39,8 +43,8 @@ static void audio_renderer_hh_start(audio_renderer_t *renderer) {
 
 static void audio_renderer_hh_render_buffer(audio_renderer_t *renderer, raop_ntp_t *ntp, unsigned char *data, int data_len, uint64_t pts)
 {
-    
-
+    if (g_audioFrameHandler)
+        g_audioFrameHandler(data, data_len);
 }
 
 static void audio_renderer_hh_set_volume(audio_renderer_t *renderer, float volume) {

@@ -359,6 +359,16 @@ int stop_server() {
     return 0;
 }
 
+void HHAirPlaySetVideoFrameHandler(VideoFrameHandler handler)
+{
+    g_videoFrameHandler = handler;
+}
+
+void HHAirPlaySetAudioFrameHandler(AudioFrameHandler handler)
+{
+    g_audioFrameHandler = handler;
+}
+
 int HHAirPlayStart(const char* deviceName)
 {
     std::string server_name = DEFAULT_NAME;

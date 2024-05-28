@@ -16,6 +16,10 @@
 #include <unistd.h>
 #endif
 
+#include "../common/common_defines.h"
+
+VideoFrameHandler g_videoFrameHandler = NULL;
+
 typedef struct video_renderer_hh_s {
     video_renderer_t base;
 } video_renderer_hh_t;
@@ -39,17 +43,8 @@ static void video_renderer_hh_start(video_renderer_t *renderer) {
 
 static void video_renderer_hh_render_buffer(video_renderer_t *renderer, raop_ntp_t *ntp, unsigned char *data, int data_len, uint64_t pts, int type)
 {
-    FILE* file = fopen("C:\\A_ReserveLand\\video_data.h264", "ab");
-
-    // 检查文件是否成功打开
-    if (file == NULL) {
-        printf("can not open file\n");
-        return 1;
-    }
-
-    // 写入视频数据到文件
-    fwrite(data, 1, data_len, file);
-    fclose(file);
+    if (g_videoFrameHandler)
+        g_videoFrameHandler(data, data_len);
 }
 
 static void video_renderer_hh_flush(video_renderer_t *renderer) {

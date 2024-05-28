@@ -10,6 +10,36 @@
 
 #include "airplay.h"
 
+void onVideoFrame(unsigned char* data, int data_len)
+{
+    FILE* file = fopen("C:\\A_ReserveLand\\video_data.h264", "ab");
+
+    // 检查文件是否成功打开
+    if (file == NULL) {
+        printf("can not open file\n");
+        return;
+    }
+
+    // 写入视频数据到文件
+    fwrite(data, 1, data_len, file);
+    fclose(file);
+}
+
+void onAudioFrame(unsigned char* data, int data_len)
+{
+    FILE* file = fopen("C:\\A_ReserveLand\\audio_data.aac", "ab");
+
+    // 检查文件是否成功打开
+    if (file == NULL) {
+        printf("can not open file\n");
+        return;
+    }
+
+    // 写入视频数据到文件
+    fwrite(data, 1, data_len, file);
+    fclose(file);
+}
+
 class CMainDlg : public CDialogImpl<CMainDlg>, public CMessageFilter
 {
 public:
@@ -62,6 +92,8 @@ public:
 
     LRESULT OnClickAirPlayStart(WORD /*wNotifyCode*/, WORD wID, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
     {
+        HHAirPlaySetVideoFrameHandler(onVideoFrame);
+        HHAirPlaySetAudioFrameHandler(onAudioFrame);
         HHAirPlayStart("WL_AirPlay");
 
         //CString msg;

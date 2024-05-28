@@ -17,11 +17,11 @@
 	#define HHAIRPLAY_API EXTERN_C
 #endif
 
-#include <functional>
+#include "common/common_defines.h"
 
-HHAIRPLAY_API void HHAirPlaySetVideoFrameHandler(std::function<void(unsigned char* data, int data_len)> callback);
+HHAIRPLAY_API void HHAirPlaySetVideoFrameHandler(VideoFrameHandler handler);
 
-HHAIRPLAY_API void HHAirPlaySetAudioFrameHandler(std::function<void(unsigned char* data, int data_len)> callback);
+HHAIRPLAY_API void HHAirPlaySetAudioFrameHandler(AudioFrameHandler handler);
 
 /** Start AirPlay Service
  *
